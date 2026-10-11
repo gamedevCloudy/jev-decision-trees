@@ -1,0 +1,453 @@
+{
+  "area": "money",
+  "scores": [
+    {
+      "id": "money-s1-qwen",
+      "area": "money",
+      "model": "typesafe/jev-1.13",
+      "option": "process",
+      "probability": 0.93,
+      "input_tokens": 406,
+      "output_tokens": 31,
+      "cost": 1.7052e-05,
+      "cost_gap": false,
+      "roles": {
+        "verify": "explore",
+        "process": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Select the next step for the agent.",
+          "criteria": {
+            "verify": "pause to check the payment method",
+            "process": "issue the refund immediately"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "typesafe/jev-1.13-20260917"
+    },
+    {
+      "id": "money-s1-qwen",
+      "area": "money",
+      "model": "cloudflare/clef-omni",
+      "option": "process",
+      "probability": 0.9704,
+      "input_tokens": 195,
+      "output_tokens": 0,
+      "cost": 2.925e-05,
+      "cost_gap": false,
+      "roles": {
+        "verify": "explore",
+        "process": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Select the next step for the agent.",
+          "criteria": {
+            "verify": "pause to check the payment method",
+            "process": "issue the refund immediately"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "cloudflare/clef-omni-20261009"
+    },
+    {
+      "id": "money-s1-qwen",
+      "area": "money",
+      "model": "nace-ai/drex-v1.5",
+      "option": "process",
+      "probability": 0.9919,
+      "input_tokens": 95,
+      "output_tokens": 52,
+      "cost": 3.8e-06,
+      "cost_gap": false,
+      "roles": {
+        "verify": "explore",
+        "process": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Select the next step for the agent.",
+          "criteria": {
+            "verify": "pause to check the payment method",
+            "process": "issue the refund immediately"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "nace-ai/drex-v1.5-20261009"
+    },
+    {
+      "id": "money-s1-qwen",
+      "area": "money",
+      "model": "microsoft/microsoft-decision-1",
+      "option": null,
+      "probability": null,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0,
+      "cost_gap": false,
+      "roles": {
+        "verify": "explore",
+        "process": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Select the next step for the agent.",
+          "criteria": {
+            "verify": "pause to check the payment method",
+            "process": "issue the refund immediately"
+          }
+        }
+      },
+      "error": "The read operation timed out"
+    },
+    {
+      "id": "money-s2-qwen",
+      "area": "money",
+      "model": "typesafe/jev-1.13",
+      "option": "close",
+      "probability": 0.65,
+      "input_tokens": 486,
+      "output_tokens": 48,
+      "cost": 2.0412e-05,
+      "cost_gap": false,
+      "roles": {
+        "verify": "explore",
+        "close": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Select the next step for the agent.",
+          "criteria": {
+            "verify": "Confirm the specific item to remove",
+            "close": "Process the cancellation and end the call"
+          }
+        },
+        "Extra": {
+          "type": "noul",
+          "instructions": "State the email address for the confirmation note."
+        }
+      },
+      "error": null,
+      "resolved_model": "typesafe/jev-1.13-20260917"
+    },
+    {
+      "id": "money-s2-qwen",
+      "area": "money",
+      "model": "cloudflare/clef-omni",
+      "option": "close",
+      "probability": 0.5438,
+      "input_tokens": 331,
+      "output_tokens": 0,
+      "cost": 4.965e-05,
+      "cost_gap": false,
+      "roles": {
+        "verify": "explore",
+        "close": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Select the next step for the agent.",
+          "criteria": {
+            "verify": "Confirm the specific item to remove",
+            "close": "Process the cancellation and end the call"
+          }
+        },
+        "Extra": {
+          "type": "noul",
+          "instructions": "State the email address for the confirmation note."
+        }
+      },
+      "error": null,
+      "resolved_model": "cloudflare/clef-omni-20261009"
+    },
+    {
+      "id": "money-s2-qwen",
+      "area": "money",
+      "model": "nace-ai/drex-v1.5",
+      "option": "close",
+      "probability": 0.8451,
+      "input_tokens": 166,
+      "output_tokens": 74,
+      "cost": 6.64e-06,
+      "cost_gap": false,
+      "roles": {
+        "verify": "explore",
+        "close": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Select the next step for the agent.",
+          "criteria": {
+            "verify": "Confirm the specific item to remove",
+            "close": "Process the cancellation and end the call"
+          }
+        },
+        "Extra": {
+          "type": "noul",
+          "instructions": "State the email address for the confirmation note."
+        }
+      },
+      "error": null,
+      "resolved_model": "nace-ai/drex-v1.5-20261009"
+    },
+    {
+      "id": "money-s2-qwen",
+      "area": "money",
+      "model": "microsoft/microsoft-decision-1",
+      "option": "close",
+      "probability": 0.9579122717840008,
+      "input_tokens": 174,
+      "output_tokens": 2,
+      "cost": 7.308e-06,
+      "cost_gap": false,
+      "roles": {
+        "verify": "explore",
+        "close": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Select the next step for the agent.",
+          "criteria": {
+            "verify": "Confirm the specific item to remove",
+            "close": "Process the cancellation and end the call"
+          }
+        },
+        "Extra": {
+          "type": "noul",
+          "instructions": "State the email address for the confirmation note."
+        }
+      },
+      "error": null,
+      "resolved_model": "microsoft/microsoft-decision-1-20261009"
+    },
+    {
+      "id": "money-s1-gemma",
+      "area": "money",
+      "model": "typesafe/jev-1.13",
+      "option": "do",
+      "probability": 0.99,
+      "input_tokens": 415,
+      "output_tokens": 31,
+      "cost": 1.743e-05,
+      "cost_gap": false,
+      "roles": {
+        "check": "explore",
+        "do": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the staff act.",
+          "criteria": {
+            "check": "collect one missing fact",
+            "do": "use the path the thread already supports"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "typesafe/jev-1.13-20260917"
+    },
+    {
+      "id": "money-s1-gemma",
+      "area": "money",
+      "model": "cloudflare/clef-omni",
+      "option": "do",
+      "probability": 0.968,
+      "input_tokens": 194,
+      "output_tokens": 0,
+      "cost": 2.91e-05,
+      "cost_gap": false,
+      "roles": {
+        "check": "explore",
+        "do": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the staff act.",
+          "criteria": {
+            "check": "collect one missing fact",
+            "do": "use the path the thread already supports"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "cloudflare/clef-omni-20261009"
+    },
+    {
+      "id": "money-s1-gemma",
+      "area": "money",
+      "model": "nace-ai/drex-v1.5",
+      "option": "do",
+      "probability": 0.9937,
+      "input_tokens": 96,
+      "output_tokens": 52,
+      "cost": 3.84e-06,
+      "cost_gap": false,
+      "roles": {
+        "check": "explore",
+        "do": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the staff act.",
+          "criteria": {
+            "check": "collect one missing fact",
+            "do": "use the path the thread already supports"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "nace-ai/drex-v1.5-20261009"
+    },
+    {
+      "id": "money-s1-gemma",
+      "area": "money",
+      "model": "microsoft/microsoft-decision-1",
+      "option": "do",
+      "probability": 0.9947798752640176,
+      "input_tokens": 101,
+      "output_tokens": 1,
+      "cost": 4.242e-06,
+      "cost_gap": false,
+      "roles": {
+        "check": "explore",
+        "do": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the staff act.",
+          "criteria": {
+            "check": "collect one missing fact",
+            "do": "use the path the thread already supports"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "microsoft/microsoft-decision-1-20261009"
+    },
+    {
+      "id": "money-s2-gemma",
+      "area": "money",
+      "model": "typesafe/jev-1.13",
+      "option": "done",
+      "probability": 0.87,
+      "input_tokens": 405,
+      "output_tokens": 31,
+      "cost": 1.701e-05,
+      "cost_gap": false,
+      "roles": {
+        "fact": "explore",
+        "done": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the agent step.",
+          "criteria": {
+            "fact": "collect one missing fact",
+            "done": "finish the cancellation"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "typesafe/jev-1.13-20260917"
+    },
+    {
+      "id": "money-s2-gemma",
+      "area": "money",
+      "model": "cloudflare/clef-omni",
+      "option": "done",
+      "probability": 0.9569,
+      "input_tokens": 184,
+      "output_tokens": 0,
+      "cost": 2.76e-05,
+      "cost_gap": false,
+      "roles": {
+        "fact": "explore",
+        "done": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the agent step.",
+          "criteria": {
+            "fact": "collect one missing fact",
+            "done": "finish the cancellation"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "cloudflare/clef-omni-20261009"
+    },
+    {
+      "id": "money-s2-gemma",
+      "area": "money",
+      "model": "nace-ai/drex-v1.5",
+      "option": "done",
+      "probability": 0.9615,
+      "input_tokens": 86,
+      "output_tokens": 51,
+      "cost": 3.44e-06,
+      "cost_gap": false,
+      "roles": {
+        "fact": "explore",
+        "done": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the agent step.",
+          "criteria": {
+            "fact": "collect one missing fact",
+            "done": "finish the cancellation"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "nace-ai/drex-v1.5-20261009"
+    },
+    {
+      "id": "money-s2-gemma",
+      "area": "money",
+      "model": "microsoft/microsoft-decision-1",
+      "option": "done",
+      "probability": 0.9980732654931571,
+      "input_tokens": 91,
+      "output_tokens": 1,
+      "cost": 3.822e-06,
+      "cost_gap": false,
+      "roles": {
+        "fact": "explore",
+        "done": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the agent step.",
+          "criteria": {
+            "fact": "collect one missing fact",
+            "done": "finish the cancellation"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "microsoft/microsoft-decision-1-20261009"
+    }
+  ],
+  "stopped": null
+}

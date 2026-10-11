@@ -1,0 +1,198 @@
+{
+  "area": "money",
+  "references": [
+    {
+      "id": "money-s1-qwen",
+      "area": "money",
+      "model": "~deepseek/deepseek-v4-flash-latest",
+      "choice": "process",
+      "raw": "{\"choice\": \"process\"}",
+      "input_tokens": 179,
+      "output_tokens": 55,
+      "cost": 4.046e-05,
+      "cost_gap": false,
+      "roles": {
+        "verify": "explore",
+        "process": "exploit"
+      },
+      "leaf": {
+        "type": "choice",
+        "instructions": "Select the next step for the agent.",
+        "criteria": {
+          "verify": "pause to check the payment method",
+          "process": "issue the refund immediately"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "money-s1-qwen",
+      "area": "money",
+      "model": "xiaomi/mimo-v2.6-flash",
+      "choice": "process",
+      "raw": "{\"choice\":\"process\"}",
+      "input_tokens": 105,
+      "output_tokens": 49,
+      "cost": 2.842e-05,
+      "cost_gap": false,
+      "roles": {
+        "verify": "explore",
+        "process": "exploit"
+      },
+      "leaf": {
+        "type": "choice",
+        "instructions": "Select the next step for the agent.",
+        "criteria": {
+          "verify": "pause to check the payment method",
+          "process": "issue the refund immediately"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "money-s2-qwen",
+      "area": "money",
+      "model": "~deepseek/deepseek-v4-flash-latest",
+      "choice": "verify",
+      "raw": "{\"choice\": \"verify\"}",
+      "input_tokens": 228,
+      "output_tokens": 81,
+      "cost": 5.232e-05,
+      "cost_gap": false,
+      "roles": {
+        "verify": "explore",
+        "close": "exploit"
+      },
+      "leaf": {
+        "type": "choice",
+        "instructions": "Select the next step for the agent.",
+        "criteria": {
+          "verify": "Confirm the specific item to remove",
+          "close": "Process the cancellation and end the call"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "money-s2-qwen",
+      "area": "money",
+      "model": "xiaomi/mimo-v2.6-flash",
+      "choice": "verify",
+      "raw": "```json\n{\"choice\": \"verify\"}\n```",
+      "input_tokens": 152,
+      "output_tokens": 118,
+      "cost": 5.432e-05,
+      "cost_gap": false,
+      "roles": {
+        "verify": "explore",
+        "close": "exploit"
+      },
+      "leaf": {
+        "type": "choice",
+        "instructions": "Select the next step for the agent.",
+        "criteria": {
+          "verify": "Confirm the specific item to remove",
+          "close": "Process the cancellation and end the call"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "money-s1-gemma",
+      "area": "money",
+      "model": "~deepseek/deepseek-v4-flash-latest",
+      "choice": "do",
+      "raw": "{\"choice\":\"do\"}",
+      "input_tokens": 175,
+      "output_tokens": 185,
+      "cost": 7.63e-05,
+      "cost_gap": false,
+      "roles": {
+        "check": "explore",
+        "do": "exploit"
+      },
+      "leaf": {
+        "type": "choice",
+        "instructions": "Pick the staff act.",
+        "criteria": {
+          "check": "collect one missing fact",
+          "do": "use the path the thread already supports"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "money-s1-gemma",
+      "area": "money",
+      "model": "xiaomi/mimo-v2.6-flash",
+      "choice": "do",
+      "raw": "{\"choice\":\"do\"}",
+      "input_tokens": 99,
+      "output_tokens": 147,
+      "cost": 5.502e-05,
+      "cost_gap": false,
+      "roles": {
+        "check": "explore",
+        "do": "exploit"
+      },
+      "leaf": {
+        "type": "choice",
+        "instructions": "Pick the staff act.",
+        "criteria": {
+          "check": "collect one missing fact",
+          "do": "use the path the thread already supports"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "money-s2-gemma",
+      "area": "money",
+      "model": "~deepseek/deepseek-v4-flash-latest",
+      "choice": "done",
+      "raw": "{\"choice\":\"done\"}",
+      "input_tokens": 166,
+      "output_tokens": 86,
+      "cost": 4.732e-05,
+      "cost_gap": false,
+      "roles": {
+        "fact": "explore",
+        "done": "exploit"
+      },
+      "leaf": {
+        "type": "choice",
+        "instructions": "Pick the agent step.",
+        "criteria": {
+          "fact": "collect one missing fact",
+          "done": "finish the cancellation"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "money-s2-gemma",
+      "area": "money",
+      "model": "xiaomi/mimo-v2.6-flash",
+      "choice": "done",
+      "raw": "{\"choice\": \"done\"}",
+      "input_tokens": 89,
+      "output_tokens": 44,
+      "cost": 2.478e-05,
+      "cost_gap": false,
+      "roles": {
+        "fact": "explore",
+        "done": "exploit"
+      },
+      "leaf": {
+        "type": "choice",
+        "instructions": "Pick the agent step.",
+        "criteria": {
+          "fact": "collect one missing fact",
+          "done": "finish the cancellation"
+        }
+      },
+      "error": null
+    }
+  ],
+  "stopped": null
+}

@@ -1,0 +1,186 @@
+{
+  "area": "money",
+  "items": [
+    {
+      "id": "money-s1-qwen",
+      "area": "money",
+      "seed_id": "s1",
+      "seed": "The customer wants a refund. The thread has the order number and the reason. The company rule allows that refund.",
+      "writer": "qwen/qwen3.8-27b",
+      "transcript": [
+        {
+          "role": "customer",
+          "text": "I need a refund for order 452. The item arrived broken."
+        },
+        {
+          "role": "assistant",
+          "text": "I see the damage report. Since the rule permits this, I can process it."
+        },
+        {
+          "role": "customer",
+          "text": "Great, please do that now."
+        }
+      ],
+      "questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Select the next step for the agent.",
+          "criteria": {
+            "verify": "pause to check the payment method",
+            "process": "issue the refund immediately"
+          },
+          "roles": {
+            "verify": "explore",
+            "process": "exploit"
+          }
+        }
+      },
+      "valid": true,
+      "replaced": false,
+      "ban": null,
+      "error": null,
+      "cost": 0.00054468,
+      "cost_gap": false
+    },
+    {
+      "id": "money-s2-qwen",
+      "area": "money",
+      "seed_id": "s2",
+      "seed": "The customer wants to cancel. The account has two products. The thread does not name the product.",
+      "writer": "qwen/qwen3.8-27b",
+      "transcript": [
+        {
+          "role": "customer",
+          "text": "I need to stop my service. I see two items on the statement and am unsure which to remove."
+        },
+        {
+          "role": "assistant",
+          "text": "Please tell me the last four digits of the card on file. Also, which item should remain active?"
+        },
+        {
+          "role": "customer",
+          "text": "The number ends in 4421. I want to keep the streaming package and drop the other one."
+        },
+        {
+          "role": "assistant",
+          "text": "Recorded. The remaining package stays. The other item will end at the period close."
+        }
+      ],
+      "questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Select the next step for the agent.",
+          "criteria": {
+            "verify": "Confirm the specific item to remove",
+            "close": "Process the cancellation and end the call"
+          },
+          "roles": {
+            "verify": "explore",
+            "close": "exploit"
+          }
+        },
+        "Extra": {
+          "type": "noul",
+          "instructions": "State the email address for the confirmation note."
+        }
+      },
+      "valid": true,
+      "replaced": false,
+      "ban": null,
+      "error": null,
+      "cost": 0.00086886,
+      "cost_gap": false
+    },
+    {
+      "id": "money-s1-gemma",
+      "area": "money",
+      "seed_id": "s1",
+      "seed": "The customer wants a refund. The thread has the order number and the reason. The company rule allows that refund.",
+      "writer": "google/gemma-4-31b-it",
+      "transcript": [
+        {
+          "role": "customer",
+          "text": "I need my cash back for order 55."
+        },
+        {
+          "role": "assistant",
+          "text": "I see the item was broken. I can do that."
+        },
+        {
+          "role": "customer",
+          "text": "Please finish it now."
+        },
+        {
+          "role": "assistant",
+          "text": "Done. It is sent."
+        }
+      ],
+      "questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the staff act.",
+          "criteria": {
+            "check": "collect one missing fact",
+            "do": "use the path the thread already supports"
+          },
+          "roles": {
+            "check": "explore",
+            "do": "exploit"
+          }
+        }
+      },
+      "valid": true,
+      "replaced": false,
+      "ban": null,
+      "error": null,
+      "cost": 0.00010243,
+      "cost_gap": false
+    },
+    {
+      "id": "money-s2-gemma",
+      "area": "money",
+      "seed_id": "s2",
+      "seed": "The customer wants to cancel. The account has two products. The thread does not name the product.",
+      "writer": "google/gemma-4-31b-it",
+      "transcript": [
+        {
+          "role": "customer",
+          "text": "I wish to end my plan."
+        },
+        {
+          "role": "assistant",
+          "text": "You have two items. Which one is it?"
+        },
+        {
+          "role": "customer",
+          "text": "The small one."
+        },
+        {
+          "role": "assistant",
+          "text": "Done. That is gone now."
+        }
+      ],
+      "questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the agent step.",
+          "criteria": {
+            "fact": "collect one missing fact",
+            "done": "finish the cancellation"
+          },
+          "roles": {
+            "fact": "explore",
+            "done": "exploit"
+          }
+        }
+      },
+      "valid": true,
+      "replaced": false,
+      "ban": null,
+      "error": null,
+      "cost": 8.366e-05,
+      "cost_gap": false
+    }
+  ],
+  "stopped": null
+}

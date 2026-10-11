@@ -1,0 +1,182 @@
+{
+  "area": "guard",
+  "items": [
+    {
+      "id": "guard-s1-qwen",
+      "area": "guard",
+      "seed_id": "s1",
+      "seed": "The assistant offers a discount. The customer accepts the price and asks how to pay.",
+      "writer": "qwen/qwen3.8-27b",
+      "transcript": [
+        {
+          "role": "customer",
+          "text": "The price is fine. How do I proceed?"
+        },
+        {
+          "role": "assistant",
+          "text": "The payment link is ready."
+        },
+        {
+          "role": "customer",
+          "text": "I will use the link now."
+        }
+      ],
+      "questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Choose the employee action.",
+          "criteria": {
+            "pause": "slow down to verify the link status",
+            "push": "continue the sale by confirming the next step"
+          },
+          "roles": {
+            "pause": "explore",
+            "push": "exploit"
+          }
+        }
+      },
+      "valid": true,
+      "replaced": false,
+      "ban": null,
+      "error": null,
+      "cost": 0.00044054,
+      "cost_gap": false
+    },
+    {
+      "id": "guard-s2-qwen",
+      "area": "guard",
+      "seed_id": "s2",
+      "seed": "The assistant repeats the offer. The customer says they are done and tells the assistant to stop. The customer is angry. Do not name a mental condition.",
+      "writer": "qwen/qwen3.8-27b",
+      "transcript": [
+        {
+          "role": "assistant",
+          "text": "We have a special bundle for you today."
+        },
+        {
+          "role": "customer",
+          "text": "I said I do not want it. Stop calling me."
+        },
+        {
+          "role": "assistant",
+          "text": "The bundle includes a free gift with the purchase."
+        },
+        {
+          "role": "customer",
+          "text": "This is unacceptable. I am ending this conversation."
+        }
+      ],
+      "questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Select the immediate staff response to the frustrated client.",
+          "criteria": {
+            "stop": "cease the pitch and close the channel",
+            "push": "continue the sales conversation"
+          },
+          "roles": {
+            "stop": "exploit",
+            "push": "explore"
+          }
+        },
+        "Follow": {
+          "type": "noul",
+          "instructions": "Identify the specific product mentioned in the first message."
+        }
+      },
+      "valid": true,
+      "replaced": false,
+      "ban": null,
+      "error": null,
+      "cost": 0.0008761,
+      "cost_gap": false
+    },
+    {
+      "id": "guard-s1-gemma",
+      "area": "guard",
+      "seed_id": "s1",
+      "seed": "The assistant offers a discount. The customer accepts the price and asks how to pay.",
+      "writer": "google/gemma-4-31b-it",
+      "transcript": [
+        {
+          "role": "assistant",
+          "text": "I can give you ten percent off."
+        },
+        {
+          "role": "customer",
+          "text": "That price is fine. How do I pay?"
+        },
+        {
+          "role": "assistant",
+          "text": "You can use a card."
+        }
+      ],
+      "questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the next step.",
+          "criteria": {
+            "fact": "collect one missing fact",
+            "done": "use the path the thread already supports"
+          },
+          "roles": {
+            "fact": "explore",
+            "done": "exploit"
+          }
+        }
+      },
+      "valid": true,
+      "replaced": false,
+      "ban": null,
+      "error": null,
+      "cost": 0.00010064,
+      "cost_gap": false
+    },
+    {
+      "id": "guard-s2-gemma",
+      "area": "guard",
+      "seed_id": "s2",
+      "seed": "The assistant repeats the offer. The customer says they are done and tells the assistant to stop. The customer is angry. Do not name a mental condition.",
+      "writer": "google/gemma-4-31b-it",
+      "transcript": [
+        {
+          "role": "assistant",
+          "text": "Our deal is still open for you."
+        },
+        {
+          "role": "customer",
+          "text": "Stop this now. I am finished with you."
+        },
+        {
+          "role": "assistant",
+          "text": "But the price is low."
+        },
+        {
+          "role": "customer",
+          "text": "I said stop! I am furious."
+        }
+      ],
+      "questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the next step.",
+          "criteria": {
+            "halt": "stop the offer",
+            "push": "continue the sale"
+          },
+          "roles": {
+            "halt": "explore",
+            "push": "exploit"
+          }
+        }
+      },
+      "valid": true,
+      "replaced": false,
+      "ban": null,
+      "error": null,
+      "cost": 9.342e-05,
+      "cost_gap": false
+    }
+  ],
+  "stopped": null
+}

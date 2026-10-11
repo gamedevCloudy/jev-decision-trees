@@ -1,0 +1,186 @@
+{
+  "area": "inbox",
+  "items": [
+    {
+      "id": "inbox-s1-qwen",
+      "area": "inbox",
+      "seed_id": "s1",
+      "seed": "The customer cannot find an order. The thread has the order number and the delivery day. The employee can answer from the thread.",
+      "writer": "qwen/qwen3.8-27b",
+      "transcript": [
+        {
+          "role": "customer",
+          "text": "I cannot locate my recent shipment."
+        },
+        {
+          "role": "assistant",
+          "text": "Reference number 889 is visible here. It arrives Thursday."
+        },
+        {
+          "role": "customer",
+          "text": "That confirms the date I need."
+        },
+        {
+          "role": "assistant",
+          "text": "Let me know if you need help with the tracking link."
+        }
+      ],
+      "questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Select the correct response strategy.",
+          "criteria": {
+            "provide": "send the confirmation",
+            "pause": "collect one missing detail"
+          },
+          "roles": {
+            "provide": "exploit",
+            "pause": "explore"
+          }
+        }
+      },
+      "valid": true,
+      "replaced": false,
+      "ban": null,
+      "error": null,
+      "cost": 0.00067645,
+      "cost_gap": false
+    },
+    {
+      "id": "inbox-s2-qwen",
+      "area": "inbox",
+      "seed_id": "s2",
+      "seed": "The customer wants a person. The thread does not have the account email. One fact is missing.",
+      "writer": "qwen/qwen3.8-27b",
+      "transcript": [
+        {
+          "role": "customer",
+          "text": "I need to speak with a human representative regarding my recent purchase."
+        },
+        {
+          "role": "assistant",
+          "text": "I can arrange that for you. To verify your identity and locate your file, please provide the email address associated with your order."
+        },
+        {
+          "role": "customer",
+          "text": "Sure, let me check my records. I will send it in a moment."
+        },
+        {
+          "role": "assistant",
+          "text": "Thank you. I will stay on the line until you have that information ready."
+        }
+      ],
+      "questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Decide how the agent should proceed with the verification step.",
+          "criteria": {
+            "pause": "wait for the user to provide the missing detail",
+            "send": "confirm the handoff procedure once data is received"
+          },
+          "roles": {
+            "pause": "explore",
+            "send": "exploit"
+          }
+        },
+        "extra": {
+          "type": "noul",
+          "instructions": "Describe the sentiment of the user's current state."
+        }
+      },
+      "valid": true,
+      "replaced": false,
+      "ban": null,
+      "error": null,
+      "cost": 0.00112615,
+      "cost_gap": false
+    },
+    {
+      "id": "inbox-s1-gemma",
+      "area": "inbox",
+      "seed_id": "s1",
+      "seed": "The customer cannot find an order. The thread has the order number and the delivery day. The employee can answer from the thread.",
+      "writer": "google/gemma-4-31b-it",
+      "transcript": [
+        {
+          "role": "customer",
+          "text": "Where is my stuff?"
+        },
+        {
+          "role": "assistant",
+          "text": "The id is 55. It arrives on Monday."
+        },
+        {
+          "role": "customer",
+          "text": "Perfect. Thank you."
+        }
+      ],
+      "questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the next step.",
+          "criteria": {
+            "fact": "collect one missing fact",
+            "done": "use the path the thread already supports"
+          },
+          "roles": {
+            "fact": "explore",
+            "done": "exploit"
+          }
+        }
+      },
+      "valid": true,
+      "replaced": false,
+      "ban": null,
+      "error": null,
+      "cost": 0.0001024,
+      "cost_gap": false
+    },
+    {
+      "id": "inbox-s2-gemma",
+      "area": "inbox",
+      "seed_id": "s2",
+      "seed": "The customer wants a person. The thread does not have the account email. One fact is missing.",
+      "writer": "google/gemma-4-31b-it",
+      "transcript": [
+        {
+          "role": "customer",
+          "text": "I need to speak with a human."
+        },
+        {
+          "role": "assistant",
+          "text": "I can help with that. Which email is on the account?"
+        },
+        {
+          "role": "customer",
+          "text": "It is user@mail.com."
+        },
+        {
+          "role": "assistant",
+          "text": "One moment while I connect you."
+        }
+      ],
+      "questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the next step.",
+          "criteria": {
+            "find": "collect one missing fact",
+            "end": "use the path the thread already supports"
+          },
+          "roles": {
+            "find": "explore",
+            "end": "exploit"
+          }
+        }
+      },
+      "valid": true,
+      "replaced": false,
+      "ban": null,
+      "error": null,
+      "cost": 0.00010724,
+      "cost_gap": false
+    }
+  ],
+  "stopped": null
+}

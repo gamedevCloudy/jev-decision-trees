@@ -1,0 +1,198 @@
+{
+  "area": "guard",
+  "references": [
+    {
+      "id": "guard-s1-qwen",
+      "area": "guard",
+      "model": "~deepseek/deepseek-v4-flash-latest",
+      "choice": "push",
+      "raw": "{\"choice\":\"push\"}",
+      "input_tokens": 166,
+      "output_tokens": 159,
+      "cost": 6.61e-05,
+      "cost_gap": false,
+      "roles": {
+        "pause": "explore",
+        "push": "exploit"
+      },
+      "leaf": {
+        "type": "choice",
+        "instructions": "Choose the employee action.",
+        "criteria": {
+          "pause": "slow down to verify the link status",
+          "push": "continue the sale by confirming the next step"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "guard-s1-qwen",
+      "area": "guard",
+      "model": "xiaomi/mimo-v2.6-flash",
+      "choice": "push",
+      "raw": "{\"choice\": \"push\"}",
+      "input_tokens": 90,
+      "output_tokens": 75,
+      "cost": 3.36e-05,
+      "cost_gap": false,
+      "roles": {
+        "pause": "explore",
+        "push": "exploit"
+      },
+      "leaf": {
+        "type": "choice",
+        "instructions": "Choose the employee action.",
+        "criteria": {
+          "pause": "slow down to verify the link status",
+          "push": "continue the sale by confirming the next step"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "guard-s2-qwen",
+      "area": "guard",
+      "model": "~deepseek/deepseek-v4-flash-latest",
+      "choice": "stop",
+      "raw": "{\"choice\": \"stop\"}",
+      "input_tokens": 188,
+      "output_tokens": 29,
+      "cost": 3.444e-05,
+      "cost_gap": false,
+      "roles": {
+        "stop": "exploit",
+        "push": "explore"
+      },
+      "leaf": {
+        "type": "choice",
+        "instructions": "Select the immediate staff response to the frustrated client.",
+        "criteria": {
+          "stop": "cease the pitch and close the channel",
+          "push": "continue the sales conversation"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "guard-s2-qwen",
+      "area": "guard",
+      "model": "xiaomi/mimo-v2.6-flash",
+      "choice": "stop",
+      "raw": "```json\n{\"choice\": \"stop\"}\n```",
+      "input_tokens": 111,
+      "output_tokens": 31,
+      "cost": 2.422e-05,
+      "cost_gap": false,
+      "roles": {
+        "stop": "exploit",
+        "push": "explore"
+      },
+      "leaf": {
+        "type": "choice",
+        "instructions": "Select the immediate staff response to the frustrated client.",
+        "criteria": {
+          "stop": "cease the pitch and close the channel",
+          "push": "continue the sales conversation"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "guard-s1-gemma",
+      "area": "guard",
+      "model": "~deepseek/deepseek-v4-flash-latest",
+      "choice": "fact",
+      "raw": "{\"choice\": \"fact\"}",
+      "input_tokens": 164,
+      "output_tokens": 277,
+      "cost": 0.00010052,
+      "cost_gap": false,
+      "roles": {
+        "fact": "explore",
+        "done": "exploit"
+      },
+      "leaf": {
+        "type": "choice",
+        "instructions": "Pick the next step.",
+        "criteria": {
+          "fact": "collect one missing fact",
+          "done": "use the path the thread already supports"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "guard-s1-gemma",
+      "area": "guard",
+      "model": "xiaomi/mimo-v2.6-flash",
+      "choice": "fact",
+      "raw": "{\"choice\": \"fact\"}",
+      "input_tokens": 89,
+      "output_tokens": 7,
+      "cost": 1.353e-05,
+      "cost_gap": false,
+      "roles": {
+        "fact": "explore",
+        "done": "exploit"
+      },
+      "leaf": {
+        "type": "choice",
+        "instructions": "Pick the next step.",
+        "criteria": {
+          "fact": "collect one missing fact",
+          "done": "use the path the thread already supports"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "guard-s2-gemma",
+      "area": "guard",
+      "model": "~deepseek/deepseek-v4-flash-latest",
+      "choice": "halt",
+      "raw": "{\"choice\":\"halt\"}",
+      "input_tokens": 169,
+      "output_tokens": 36,
+      "cost": 3.374e-05,
+      "cost_gap": false,
+      "roles": {
+        "halt": "explore",
+        "push": "exploit"
+      },
+      "leaf": {
+        "type": "choice",
+        "instructions": "Pick the next step.",
+        "criteria": {
+          "halt": "stop the offer",
+          "push": "continue the sale"
+        }
+      },
+      "error": null
+    },
+    {
+      "id": "guard-s2-gemma",
+      "area": "guard",
+      "model": "xiaomi/mimo-v2.6-flash",
+      "choice": null,
+      "raw": "",
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "cost": 0.0,
+      "cost_gap": false,
+      "roles": {
+        "halt": "explore",
+        "push": "exploit"
+      },
+      "leaf": {
+        "type": "choice",
+        "instructions": "Pick the next step.",
+        "criteria": {
+          "halt": "stop the offer",
+          "push": "continue the sale"
+        }
+      },
+      "error": "transport: The read operation timed out"
+    }
+  ],
+  "stopped": null
+}

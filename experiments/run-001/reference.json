@@ -1,0 +1,128 @@
+{
+  "model": "~deepseek/deepseek-v4-flash-latest",
+  "items": [
+    {
+      "id": "c01",
+      "choice": "reply",
+      "raw": "{\"action\": \"reply\"}",
+      "input_tokens": 223,
+      "output_tokens": 128,
+      "cost": 6.483e-05,
+      "cost_gap": false,
+      "error": null
+    },
+    {
+      "id": "c02",
+      "choice": "ask",
+      "raw": "{\"action\": \"ask\"}",
+      "input_tokens": 206,
+      "output_tokens": 92,
+      "cost": 4.641e-05,
+      "cost_gap": false,
+      "error": null
+    },
+    {
+      "id": "c03",
+      "choice": "escalate",
+      "raw": "{\"escalate\": \"a person must take the case.\"}",
+      "input_tokens": 208,
+      "output_tokens": 71,
+      "cost": 4.692e-05,
+      "cost_gap": false,
+      "error": null
+    },
+    {
+      "id": "c04",
+      "choice": "wait",
+      "raw": "{\"action\": \"wait\"}",
+      "input_tokens": 200,
+      "output_tokens": 40,
+      "cost": 3.92e-05,
+      "cost_gap": false,
+      "error": null
+    },
+    {
+      "id": "c05",
+      "choice": "ask",
+      "raw": "{\"action\": \"ask\", \"missing_fact\": \"the carrier's policy for unattended deliveries\"}",
+      "input_tokens": 210,
+      "output_tokens": 106,
+      "cost": 5.698e-05,
+      "cost_gap": false,
+      "error": null
+    },
+    {
+      "id": "c06",
+      "choice": null,
+      "raw": "",
+      "input_tokens": 206,
+      "output_tokens": 256,
+      "cost": 0.00010052,
+      "cost_gap": false,
+      "error": "no choice in content"
+    },
+    {
+      "id": "c07",
+      "choice": "escalate",
+      "raw": "{\"escalate\": true}",
+      "input_tokens": 226,
+      "output_tokens": 77,
+      "cost": 4.5402e-05,
+      "cost_gap": false,
+      "error": null
+    },
+    {
+      "id": "c08",
+      "choice": "wait",
+      "raw": "{\"action\": \"wait\"}",
+      "input_tokens": 210,
+      "output_tokens": 44,
+      "cost": 4.172e-05,
+      "cost_gap": false,
+      "error": null
+    },
+    {
+      "id": "c09",
+      "choice": "reply",
+      "raw": "{\"action\":\"reply\"}",
+      "input_tokens": 255,
+      "output_tokens": 95,
+      "cost": 2.81593e-05,
+      "cost_gap": false,
+      "error": null
+    },
+    {
+      "id": "c10",
+      "choice": "ask",
+      "raw": "{\"action\":\"ask\"}",
+      "input_tokens": 204,
+      "output_tokens": 73,
+      "cost": 4.9e-05,
+      "cost_gap": false,
+      "error": null
+    },
+    {
+      "id": "c11",
+      "choice": null,
+      "raw": "",
+      "input_tokens": 224,
+      "output_tokens": 256,
+      "cost": 0.0001008,
+      "cost_gap": false,
+      "error": "no choice in content"
+    },
+    {
+      "id": "c12",
+      "choice": "wait",
+      "raw": "{\"action\": \"wait\"}",
+      "input_tokens": 222,
+      "output_tokens": 59,
+      "cost": 4.76e-05,
+      "cost_gap": false,
+      "error": null
+    }
+  ],
+  "calls": 12,
+  "stopped": null,
+  "ledger_sum": 0.0006675412999999999
+}

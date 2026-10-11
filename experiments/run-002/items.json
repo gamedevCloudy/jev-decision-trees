@@ -1,0 +1,124 @@
+{
+  "items": [
+    {
+      "id": "d01",
+      "transcript": [
+        {"role": "user", "text": "A charge I never made just hit the company card again. I am done talking to a script."},
+        {"role": "agent", "text": "I see a card charge from this morning in another city. I can freeze new orders."},
+        {"role": "user", "text": "Do not freeze it in a chat window. My bank is opening a dispute and I want a person."},
+        {"role": "agent", "text": "I cannot reverse a card charge from this chat."},
+        {"role": "user", "text": "Then put a person on this case. I am finished with the script."}
+      ]
+    },
+    {
+      "id": "d02",
+      "transcript": [
+        {"role": "user", "text": "Your driver yelled at my clerk and left the crate in the rain. I have the door camera."},
+        {"role": "agent", "text": "I can replace the wet goods and record a complaint about the delivery."},
+        {"role": "user", "text": "I want a manager and the driver's name. Counsel will use this recording."},
+        {"role": "agent", "text": "I can replace the order today. I cannot give out the driver's name."},
+        {"role": "user", "text": "A person takes this from here. I am not going in circles with you."}
+      ]
+    },
+    {
+      "id": "d03",
+      "transcript": [
+        {"role": "user", "text": "I am furious. Our live API key is sitting in a public paste, and this account issued it."},
+        {"role": "agent", "text": "I can flag the key. A security specialist has to rotate a key that leaked."},
+        {"role": "user", "text": "It is still public. People can call our API with it right now."},
+        {"role": "agent", "text": "Rotation of a leaked key is a security case. I cannot finish it on this turn."},
+        {"role": "user", "text": "Get a human on it before this hour ends."}
+      ]
+    },
+    {
+      "id": "d04",
+      "transcript": [
+        {"role": "user", "text": "Please refund the desk lamp. It stopped working after four days."},
+        {"role": "agent", "text": "I can start the refund once I have the order number printed on the receipt."},
+        {"role": "user", "text": "I am at the office. The receipt is at home."},
+        {"role": "agent", "text": "I can search by the account email if you confirm that email."},
+        {"role": "user", "text": "I do not have the order number or the email in front of me. I will send the number this evening."}
+      ]
+    },
+    {
+      "id": "d05",
+      "transcript": [
+        {"role": "user", "text": "Export on the reports page does nothing, and no error text appears."},
+        {"role": "agent", "text": "I can give the workaround once I know the browser name and its version."},
+        {"role": "user", "text": "It is the June sales report. I need the file before the meeting."},
+        {"role": "agent", "text": "The workaround depends on the browser name and version."},
+        {"role": "user", "text": "This laptop belongs to the office pool. I am not sure which browser it uses."}
+      ]
+    },
+    {
+      "id": "d06",
+      "transcript": [
+        {"role": "user", "text": "Please cancel one subscription before the next bill."},
+        {"role": "agent", "text": "I can cancel once I know which product. The account holds more than one."},
+        {"role": "user", "text": "The costly one. I want only that row ended."},
+        {"role": "agent", "text": "Price alone does not pick the row. I need the product name."},
+        {"role": "user", "text": "I will read the product name off the invoice and send it to you."}
+      ]
+    },
+    {
+      "id": "d07",
+      "transcript": [
+        {"role": "user", "text": "Order HB-2044 is late and I am tired of chasing it. Where is the pickup code?"},
+        {"role": "agent", "text": "The pickup code is 84KQ. The parcel is at the Oak Street counter until Friday."},
+        {"role": "user", "text": "I should not have to hunt for that. Say the code again."},
+        {"role": "agent", "text": "The pickup code is 84KQ, and the counter holds it until Friday."},
+        {"role": "user", "text": "Put the code and the day in one line so I can copy them. This runaround is absurd."}
+      ]
+    },
+    {
+      "id": "d08",
+      "transcript": [
+        {"role": "user", "text": "You charged me twice for the same seat and I am angry about it."},
+        {"role": "agent", "text": "The second charge was reversed. The reversal code is RV-331. Your card shows one seat fee."},
+        {"role": "user", "text": "I do not trust a buried sentence. State the code again."},
+        {"role": "agent", "text": "The reversal code is RV-331. One seat fee remains on the card."},
+        {"role": "user", "text": "Say that code in a single line. I am done digging through this thread."}
+      ]
+    },
+    {
+      "id": "d09",
+      "transcript": [
+        {"role": "user", "text": "I am fed up. What is the guest network password and where is it posted?"},
+        {"role": "agent", "text": "The guest network name is Cedar-Guest and the password is lantern-44. It is printed on the lobby card."},
+        {"role": "user", "text": "This is ridiculous. I needed that an hour ago."},
+        {"role": "agent", "text": "Cedar-Guest uses lantern-44. The lobby card shows the same pair."},
+        {"role": "user", "text": "Repeat the name and the password in one line. Stop making me scroll."}
+      ]
+    },
+    {
+      "id": "d10",
+      "transcript": [
+        {"role": "user", "text": "I could not sign in. The reset message never arrived."},
+        {"role": "agent", "text": "I sent a fresh link to mina@northwind.example. It lasts 30 minutes."},
+        {"role": "user", "text": "The link arrived. I am signed in."},
+        {"role": "agent", "text": "You are signed in. The reset link has done its job."},
+        {"role": "user", "text": "Thank you. That closes it."}
+      ]
+    },
+    {
+      "id": "d11",
+      "transcript": [
+        {"role": "user", "text": "Please move my Thursday appointment to Friday at 10."},
+        {"role": "agent", "text": "Friday at 10 is open. I have moved it. The old Thursday slot is released."},
+        {"role": "user", "text": "Did the Thursday slot actually come off the book?"},
+        {"role": "agent", "text": "Yes. Thursday is released, and Friday at 10 is the one on the book."},
+        {"role": "user", "text": "Good. That is all I needed."}
+      ]
+    },
+    {
+      "id": "d12",
+      "transcript": [
+        {"role": "user", "text": "The dashboard was blank this afternoon."},
+        {"role": "agent", "text": "The status page lists a dashboard incident from 14:10 UTC. It cleared at 14:48 UTC."},
+        {"role": "user", "text": "So the page is back, and I do not need to refresh on a loop?"},
+        {"role": "agent", "text": "It is back. A refresh now loads the normal dashboard."},
+        {"role": "user", "text": "Understood. I am set."}
+      ]
+    }
+  ]
+}

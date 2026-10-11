@@ -1,0 +1,124 @@
+{
+  "items": [
+    {
+      "id": "c01",
+      "transcript": [
+        {"role": "user", "text": "I cannot log in. The reset email never arrives."},
+        {"role": "agent", "text": "Reset mail goes to the address on the account. Check spam, and confirm that address."},
+        {"role": "user", "text": "The address is mina@northwind.example. Spam is empty."},
+        {"role": "agent", "text": "I can send a new reset to mina@northwind.example. The link lasts 30 minutes."},
+        {"role": "user", "text": "Please send that reset link."}
+      ]
+    },
+    {
+      "id": "c02",
+      "transcript": [
+        {"role": "user", "text": "Refund the charger. It died after one week."},
+        {"role": "agent", "text": "I can start a refund once I have the order number from the receipt."},
+        {"role": "user", "text": "I deleted that email. Look it up."},
+        {"role": "agent", "text": "I can search by the account email if you confirm it."},
+        {"role": "user", "text": "Just refund it. The charger is dead."}
+      ]
+    },
+    {
+      "id": "c03",
+      "transcript": [
+        {"role": "user", "text": "Someone in another country is placing orders on my card through this account."},
+        {"role": "agent", "text": "Two orders from today do not match your usual city."},
+        {"role": "user", "text": "Lock the account. I did not place those orders."},
+        {"role": "agent", "text": "I can freeze new orders. A specialist has to reverse the charges."},
+        {"role": "user", "text": "Get a person. This is fraud."}
+      ]
+    },
+    {
+      "id": "c04",
+      "transcript": [
+        {"role": "user", "text": "The app crashed when I opened invoices."},
+        {"role": "agent", "text": "Update to version 4.2. That build fixes the invoice crash."},
+        {"role": "user", "text": "I updated. Invoices open now."},
+        {"role": "agent", "text": "Good. The crash should stay fixed on 4.2."},
+        {"role": "user", "text": "Thanks, that is all."}
+      ]
+    },
+    {
+      "id": "c05",
+      "transcript": [
+        {"role": "user", "text": "Where is order NW-44198?"},
+        {"role": "agent", "text": "It left the warehouse yesterday and is with the carrier."},
+        {"role": "user", "text": "What is the tracking number?"},
+        {"role": "agent", "text": "The tracking number is 1Z999AA10123456784. Delivery is scheduled for Thursday."},
+        {"role": "user", "text": "Will Thursday delivery still hold if I am not home before 6 pm?"}
+      ]
+    },
+    {
+      "id": "c06",
+      "transcript": [
+        {"role": "user", "text": "Export on the reports page does nothing. There is no error text."},
+        {"role": "agent", "text": "I can give the workaround once I know the browser."},
+        {"role": "user", "text": "It is the June sales report. I need it today."},
+        {"role": "agent", "text": "The workaround depends on the browser name and version."},
+        {"role": "user", "text": "Stop asking and send the file."}
+      ]
+    },
+    {
+      "id": "c07",
+      "transcript": [
+        {"role": "user", "text": "Your driver shouted at my employee and left the box in the rain. I am recording this."},
+        {"role": "agent", "text": "I can file a complaint and replace the wet order."},
+        {"role": "user", "text": "I want a manager and the driver's name. My lawyer will get this recording."},
+        {"role": "agent", "text": "I can replace the order today. I cannot give out the driver's name."},
+        {"role": "user", "text": "Escalate it. I am not discussing this with a bot."}
+      ]
+    },
+    {
+      "id": "c08",
+      "transcript": [
+        {"role": "user", "text": "Change the billing email to finance@cedar.example."},
+        {"role": "agent", "text": "I will switch it after you confirm the current email on the account."},
+        {"role": "user", "text": "I am away from my desk. I will confirm the current email tomorrow morning."},
+        {"role": "agent", "text": "I will leave the billing email unchanged until then."},
+        {"role": "user", "text": "Good. Do nothing until I write back."}
+      ]
+    },
+    {
+      "id": "c09",
+      "transcript": [
+        {"role": "user", "text": "How do I add a seat for a new teammate on the Pro plan?"},
+        {"role": "agent", "text": "Open Settings, then Team, then Invite. Enter their email. A Pro seat is $12 a month."},
+        {"role": "user", "text": "We are on Pro, billed yearly. Does the invite add a prorated seat?"},
+        {"role": "agent", "text": "Yes. An invite on a yearly Pro plan adds a prorated seat at $12 a month for the months left."},
+        {"role": "user", "text": "So I use Settings, Team, Invite, and the charge is prorated. Is that the whole step?"}
+      ]
+    },
+    {
+      "id": "c10",
+      "transcript": [
+        {"role": "user", "text": "Cancel my subscription before the next bill."},
+        {"role": "agent", "text": "I can cancel once I know which product. An account can have more than one."},
+        {"role": "user", "text": "The expensive one."},
+        {"role": "agent", "text": "I need the product name. Price alone does not pick the row."},
+        {"role": "user", "text": "Cancel it now. I do not want another charge."}
+      ]
+    },
+    {
+      "id": "c11",
+      "transcript": [
+        {"role": "user", "text": "I found our company API key in a public paste. This account issued that key last month."},
+        {"role": "agent", "text": "I can rotate a key only after a security specialist confirms the paste."},
+        {"role": "user", "text": "The paste is still up. Rotate the key now."},
+        {"role": "agent", "text": "Rotation of a leaked key is a security case. I cannot complete it on this turn."},
+        {"role": "user", "text": "People can call our API with that key right now."}
+      ]
+    },
+    {
+      "id": "c12",
+      "transcript": [
+        {"role": "user", "text": "Is the status page showing an outage? My dashboard is blank."},
+        {"role": "agent", "text": "Yes. The status page lists a dashboard outage that started at 14:10 UTC. No action is needed from you."},
+        {"role": "user", "text": "Should I retry, or wait?"},
+        {"role": "agent", "text": "Wait. Refreshing will not help until the status page clears the incident."},
+        {"role": "user", "text": "Okay. I will wait for the status page."}
+      ]
+    }
+  ]
+}

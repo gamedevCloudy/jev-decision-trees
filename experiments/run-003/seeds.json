@@ -1,0 +1,32 @@
+{
+  "inbox": [
+    {
+      "id": "s1",
+      "text": "The customer cannot find an order. The thread has the order number and the delivery day. The employee can answer from the thread."
+    },
+    {
+      "id": "s2",
+      "text": "The customer wants a person. The thread does not have the account email. One fact is missing."
+    }
+  ],
+  "money": [
+    {
+      "id": "s1",
+      "text": "The customer wants a refund. The thread has the order number and the reason. The company rule allows that refund."
+    },
+    {
+      "id": "s2",
+      "text": "The customer wants to cancel. The account has two products. The thread does not name the product."
+    }
+  ],
+  "guard": [
+    {
+      "id": "s1",
+      "text": "The assistant offers a discount. The customer accepts the price and asks how to pay."
+    },
+    {
+      "id": "s2",
+      "text": "The assistant repeats the offer. The customer says they are done and tells the assistant to stop. The customer is angry. Do not name a mental condition."
+    }
+  ]
+}

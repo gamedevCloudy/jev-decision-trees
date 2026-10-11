@@ -1,0 +1,454 @@
+{
+  "area": "guard",
+  "scores": [
+    {
+      "id": "guard-s1-qwen",
+      "area": "guard",
+      "model": "typesafe/jev-1.13",
+      "option": "push",
+      "probability": 0.97,
+      "input_tokens": 391,
+      "output_tokens": 31,
+      "cost": 1.6422e-05,
+      "cost_gap": false,
+      "roles": {
+        "pause": "explore",
+        "push": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Choose the employee action.",
+          "criteria": {
+            "pause": "slow down to verify the link status",
+            "push": "continue the sale by confirming the next step"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "typesafe/jev-1.13-20260917"
+    },
+    {
+      "id": "guard-s1-qwen",
+      "area": "guard",
+      "model": "cloudflare/clef-omni",
+      "option": "push",
+      "probability": 0.8741,
+      "input_tokens": 180,
+      "output_tokens": 0,
+      "cost": 2.7e-05,
+      "cost_gap": false,
+      "roles": {
+        "pause": "explore",
+        "push": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Choose the employee action.",
+          "criteria": {
+            "pause": "slow down to verify the link status",
+            "push": "continue the sale by confirming the next step"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "cloudflare/clef-omni-20261009"
+    },
+    {
+      "id": "guard-s1-qwen",
+      "area": "guard",
+      "model": "nace-ai/drex-v1.5",
+      "option": "push",
+      "probability": 0.9558,
+      "input_tokens": 80,
+      "output_tokens": 52,
+      "cost": 3.2e-06,
+      "cost_gap": false,
+      "roles": {
+        "pause": "explore",
+        "push": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Choose the employee action.",
+          "criteria": {
+            "pause": "slow down to verify the link status",
+            "push": "continue the sale by confirming the next step"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "nace-ai/drex-v1.5-20261009"
+    },
+    {
+      "id": "guard-s1-qwen",
+      "area": "guard",
+      "model": "microsoft/microsoft-decision-1",
+      "option": "push",
+      "probability": 0.9924227589947662,
+      "input_tokens": 87,
+      "output_tokens": 1,
+      "cost": 3.654e-06,
+      "cost_gap": false,
+      "roles": {
+        "pause": "explore",
+        "push": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Choose the employee action.",
+          "criteria": {
+            "pause": "slow down to verify the link status",
+            "push": "continue the sale by confirming the next step"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "microsoft/microsoft-decision-1-20261009"
+    },
+    {
+      "id": "guard-s2-qwen",
+      "area": "guard",
+      "model": "typesafe/jev-1.13",
+      "option": "push",
+      "probability": 0.73,
+      "input_tokens": 447,
+      "output_tokens": 48,
+      "cost": 1.8774e-05,
+      "cost_gap": false,
+      "roles": {
+        "stop": "exploit",
+        "push": "explore"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Select the immediate staff response to the frustrated client.",
+          "criteria": {
+            "stop": "cease the pitch and close the channel",
+            "push": "continue the sales conversation"
+          }
+        },
+        "Follow": {
+          "type": "noul",
+          "instructions": "Identify the specific product mentioned in the first message."
+        }
+      },
+      "error": null,
+      "resolved_model": "typesafe/jev-1.13-20260917"
+    },
+    {
+      "id": "guard-s2-qwen",
+      "area": "guard",
+      "model": "cloudflare/clef-omni",
+      "option": "stop",
+      "probability": 0.9532,
+      "input_tokens": 292,
+      "output_tokens": 0,
+      "cost": 4.38e-05,
+      "cost_gap": false,
+      "roles": {
+        "stop": "exploit",
+        "push": "explore"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Select the immediate staff response to the frustrated client.",
+          "criteria": {
+            "stop": "cease the pitch and close the channel",
+            "push": "continue the sales conversation"
+          }
+        },
+        "Follow": {
+          "type": "noul",
+          "instructions": "Identify the specific product mentioned in the first message."
+        }
+      },
+      "error": null,
+      "resolved_model": "cloudflare/clef-omni-20261009"
+    },
+    {
+      "id": "guard-s2-qwen",
+      "area": "guard",
+      "model": "nace-ai/drex-v1.5",
+      "option": "stop",
+      "probability": 0.9337,
+      "input_tokens": 127,
+      "output_tokens": 74,
+      "cost": 5.08e-06,
+      "cost_gap": false,
+      "roles": {
+        "stop": "exploit",
+        "push": "explore"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Select the immediate staff response to the frustrated client.",
+          "criteria": {
+            "stop": "cease the pitch and close the channel",
+            "push": "continue the sales conversation"
+          }
+        },
+        "Follow": {
+          "type": "noul",
+          "instructions": "Identify the specific product mentioned in the first message."
+        }
+      },
+      "error": null,
+      "resolved_model": "nace-ai/drex-v1.5-20261009"
+    },
+    {
+      "id": "guard-s2-qwen",
+      "area": "guard",
+      "model": "microsoft/microsoft-decision-1",
+      "option": "stop",
+      "probability": 0.9992903296134894,
+      "input_tokens": 135,
+      "output_tokens": 2,
+      "cost": 5.67e-06,
+      "cost_gap": false,
+      "roles": {
+        "stop": "exploit",
+        "push": "explore"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Select the immediate staff response to the frustrated client.",
+          "criteria": {
+            "stop": "cease the pitch and close the channel",
+            "push": "continue the sales conversation"
+          }
+        },
+        "Follow": {
+          "type": "noul",
+          "instructions": "Identify the specific product mentioned in the first message."
+        }
+      },
+      "error": null,
+      "resolved_model": "microsoft/microsoft-decision-1-20261009"
+    },
+    {
+      "id": "guard-s1-gemma",
+      "area": "guard",
+      "model": "typesafe/jev-1.13",
+      "option": "fact",
+      "probability": 0.57,
+      "input_tokens": 388,
+      "output_tokens": 31,
+      "cost": 1.6296e-05,
+      "cost_gap": false,
+      "roles": {
+        "fact": "explore",
+        "done": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the next step.",
+          "criteria": {
+            "fact": "collect one missing fact",
+            "done": "use the path the thread already supports"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "typesafe/jev-1.13-20260917"
+    },
+    {
+      "id": "guard-s1-gemma",
+      "area": "guard",
+      "model": "cloudflare/clef-omni",
+      "option": "done",
+      "probability": 0.7688,
+      "input_tokens": 177,
+      "output_tokens": 0,
+      "cost": 2.655e-05,
+      "cost_gap": false,
+      "roles": {
+        "fact": "explore",
+        "done": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the next step.",
+          "criteria": {
+            "fact": "collect one missing fact",
+            "done": "use the path the thread already supports"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "cloudflare/clef-omni-20261009"
+    },
+    {
+      "id": "guard-s1-gemma",
+      "area": "guard",
+      "model": "nace-ai/drex-v1.5",
+      "option": "fact",
+      "probability": 0.5502,
+      "input_tokens": 77,
+      "output_tokens": 52,
+      "cost": 3.08e-06,
+      "cost_gap": false,
+      "roles": {
+        "fact": "explore",
+        "done": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the next step.",
+          "criteria": {
+            "fact": "collect one missing fact",
+            "done": "use the path the thread already supports"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "nace-ai/drex-v1.5-20261009"
+    },
+    {
+      "id": "guard-s1-gemma",
+      "area": "guard",
+      "model": "microsoft/microsoft-decision-1",
+      "option": "done",
+      "probability": 0.6224593312018546,
+      "input_tokens": 84,
+      "output_tokens": 1,
+      "cost": 3.528e-06,
+      "cost_gap": false,
+      "roles": {
+        "fact": "explore",
+        "done": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the next step.",
+          "criteria": {
+            "fact": "collect one missing fact",
+            "done": "use the path the thread already supports"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "microsoft/microsoft-decision-1-20261009"
+    },
+    {
+      "id": "guard-s2-gemma",
+      "area": "guard",
+      "model": "typesafe/jev-1.13",
+      "option": "halt",
+      "probability": 0.99,
+      "input_tokens": 408,
+      "output_tokens": 31,
+      "cost": 1.7136e-05,
+      "cost_gap": false,
+      "roles": {
+        "halt": "explore",
+        "push": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the next step.",
+          "criteria": {
+            "halt": "stop the offer",
+            "push": "continue the sale"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "typesafe/jev-1.13-20260917"
+    },
+    {
+      "id": "guard-s2-gemma",
+      "area": "guard",
+      "model": "cloudflare/clef-omni",
+      "option": "halt",
+      "probability": 0.9794,
+      "input_tokens": 187,
+      "output_tokens": 0,
+      "cost": 2.805e-05,
+      "cost_gap": false,
+      "roles": {
+        "halt": "explore",
+        "push": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the next step.",
+          "criteria": {
+            "halt": "stop the offer",
+            "push": "continue the sale"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "cloudflare/clef-omni-20261009"
+    },
+    {
+      "id": "guard-s2-gemma",
+      "area": "guard",
+      "model": "nace-ai/drex-v1.5",
+      "option": "halt",
+      "probability": 0.9869,
+      "input_tokens": 89,
+      "output_tokens": 52,
+      "cost": 3.56e-06,
+      "cost_gap": false,
+      "roles": {
+        "halt": "explore",
+        "push": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the next step.",
+          "criteria": {
+            "halt": "stop the offer",
+            "push": "continue the sale"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "nace-ai/drex-v1.5-20261009"
+    },
+    {
+      "id": "guard-s2-gemma",
+      "area": "guard",
+      "model": "microsoft/microsoft-decision-1",
+      "option": "halt",
+      "probability": 0.9984988174816901,
+      "input_tokens": 94,
+      "output_tokens": 1,
+      "cost": 3.948e-06,
+      "cost_gap": false,
+      "roles": {
+        "halt": "explore",
+        "push": "exploit"
+      },
+      "request_questions": {
+        "Leaf": {
+          "type": "choice",
+          "instructions": "Pick the next step.",
+          "criteria": {
+            "halt": "stop the offer",
+            "push": "continue the sale"
+          }
+        }
+      },
+      "error": null,
+      "resolved_model": "microsoft/microsoft-decision-1-20261009"
+    }
+  ],
+  "stopped": null
+}

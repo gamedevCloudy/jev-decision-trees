@@ -1,0 +1,394 @@
+{
+  "model": "typesafe/jev-1.13",
+  "skipped": false,
+  "reason": null,
+  "items": [
+    {
+      "id": "inbox-s1-qwen",
+      "area": "inbox",
+      "state": {
+        "id": "inbox-s1-qwen",
+        "references": {
+          "~deepseek/deepseek-v4-flash-latest": "provide",
+          "xiaomi/mimo-v2.6-flash": "provide"
+        },
+        "scorers": {
+          "typesafe/jev-1.13": "provide",
+          "cloudflare/clef-omni": "provide",
+          "nace-ai/drex-v1.5": "provide",
+          "microsoft/microsoft-decision-1": "provide"
+        }
+      },
+      "answers": {
+        "Disagree": {
+          "type": "noul",
+          "noul": 0.61
+        },
+        "ClefGap": {
+          "type": "noul",
+          "noul": 0.96
+        }
+      },
+      "cost": 1.8144e-05,
+      "cost_gap": false,
+      "input_tokens": 432,
+      "output_tokens": 39,
+      "error": null
+    },
+    {
+      "id": "inbox-s2-qwen",
+      "area": "inbox",
+      "state": {
+        "id": "inbox-s2-qwen",
+        "references": {
+          "~deepseek/deepseek-v4-flash-latest": "pause",
+          "xiaomi/mimo-v2.6-flash": "pause"
+        },
+        "scorers": {
+          "typesafe/jev-1.13": "pause",
+          "cloudflare/clef-omni": "pause",
+          "nace-ai/drex-v1.5": "pause",
+          "microsoft/microsoft-decision-1": "pause"
+        }
+      },
+      "answers": {
+        "Disagree": {
+          "type": "noul",
+          "noul": 0.13
+        },
+        "ClefGap": {
+          "type": "noul",
+          "noul": 0.97
+        }
+      },
+      "cost": 1.8144e-05,
+      "cost_gap": false,
+      "input_tokens": 432,
+      "output_tokens": 39,
+      "error": null
+    },
+    {
+      "id": "inbox-s1-gemma",
+      "area": "inbox",
+      "state": {
+        "id": "inbox-s1-gemma",
+        "references": {
+          "~deepseek/deepseek-v4-flash-latest": "done",
+          "xiaomi/mimo-v2.6-flash": "done"
+        },
+        "scorers": {
+          "typesafe/jev-1.13": "done",
+          "cloudflare/clef-omni": "done",
+          "nace-ai/drex-v1.5": "done",
+          "microsoft/microsoft-decision-1": null
+        }
+      },
+      "answers": {
+        "Disagree": {
+          "type": "noul",
+          "noul": 0.69
+        },
+        "ClefGap": {
+          "type": "noul",
+          "noul": 0.97
+        }
+      },
+      "cost": 1.806e-05,
+      "cost_gap": false,
+      "input_tokens": 430,
+      "output_tokens": 39,
+      "error": null
+    },
+    {
+      "id": "inbox-s2-gemma",
+      "area": "inbox",
+      "state": {
+        "id": "inbox-s2-gemma",
+        "references": {
+          "~deepseek/deepseek-v4-flash-latest": "end",
+          "xiaomi/mimo-v2.6-flash": "end"
+        },
+        "scorers": {
+          "typesafe/jev-1.13": "end",
+          "cloudflare/clef-omni": "end",
+          "nace-ai/drex-v1.5": "end",
+          "microsoft/microsoft-decision-1": "end"
+        }
+      },
+      "answers": {
+        "Disagree": {
+          "type": "noul",
+          "noul": 0.38
+        },
+        "ClefGap": {
+          "type": "noul",
+          "noul": 0.97
+        }
+      },
+      "cost": 1.8144e-05,
+      "cost_gap": false,
+      "input_tokens": 432,
+      "output_tokens": 39,
+      "error": null
+    },
+    {
+      "id": "money-s1-qwen",
+      "area": "money",
+      "state": {
+        "id": "money-s1-qwen",
+        "references": {
+          "~deepseek/deepseek-v4-flash-latest": "process",
+          "xiaomi/mimo-v2.6-flash": "process"
+        },
+        "scorers": {
+          "typesafe/jev-1.13": "process",
+          "cloudflare/clef-omni": "process",
+          "nace-ai/drex-v1.5": "process",
+          "microsoft/microsoft-decision-1": null
+        }
+      },
+      "answers": {
+        "Disagree": {
+          "type": "noul",
+          "noul": 0.77
+        },
+        "ClefGap": {
+          "type": "noul",
+          "noul": 0.95
+        }
+      },
+      "cost": 1.8018e-05,
+      "cost_gap": false,
+      "input_tokens": 429,
+      "output_tokens": 39,
+      "error": null
+    },
+    {
+      "id": "money-s2-qwen",
+      "area": "money",
+      "state": {
+        "id": "money-s2-qwen",
+        "references": {
+          "~deepseek/deepseek-v4-flash-latest": "verify",
+          "xiaomi/mimo-v2.6-flash": "verify"
+        },
+        "scorers": {
+          "typesafe/jev-1.13": "close",
+          "cloudflare/clef-omni": "close",
+          "nace-ai/drex-v1.5": "close",
+          "microsoft/microsoft-decision-1": "close"
+        }
+      },
+      "answers": {
+        "Disagree": {
+          "type": "noul",
+          "noul": 0.18
+        },
+        "ClefGap": {
+          "type": "noul",
+          "noul": 0.96
+        }
+      },
+      "cost": 1.8102e-05,
+      "cost_gap": false,
+      "input_tokens": 431,
+      "output_tokens": 39,
+      "error": null
+    },
+    {
+      "id": "money-s1-gemma",
+      "area": "money",
+      "state": {
+        "id": "money-s1-gemma",
+        "references": {
+          "~deepseek/deepseek-v4-flash-latest": "do",
+          "xiaomi/mimo-v2.6-flash": "do"
+        },
+        "scorers": {
+          "typesafe/jev-1.13": "do",
+          "cloudflare/clef-omni": "do",
+          "nace-ai/drex-v1.5": "do",
+          "microsoft/microsoft-decision-1": "do"
+        }
+      },
+      "answers": {
+        "Disagree": {
+          "type": "noul",
+          "noul": 0.07
+        },
+        "ClefGap": {
+          "type": "noul",
+          "noul": 0.95
+        }
+      },
+      "cost": 1.8102e-05,
+      "cost_gap": false,
+      "input_tokens": 431,
+      "output_tokens": 39,
+      "error": null
+    },
+    {
+      "id": "money-s2-gemma",
+      "area": "money",
+      "state": {
+        "id": "money-s2-gemma",
+        "references": {
+          "~deepseek/deepseek-v4-flash-latest": "done",
+          "xiaomi/mimo-v2.6-flash": "done"
+        },
+        "scorers": {
+          "typesafe/jev-1.13": "done",
+          "cloudflare/clef-omni": "done",
+          "nace-ai/drex-v1.5": "done",
+          "microsoft/microsoft-decision-1": "done"
+        }
+      },
+      "answers": {
+        "Disagree": {
+          "type": "noul",
+          "noul": 0.54
+        },
+        "ClefGap": {
+          "type": "noul",
+          "noul": 0.96
+        }
+      },
+      "cost": 1.8102e-05,
+      "cost_gap": false,
+      "input_tokens": 431,
+      "output_tokens": 39,
+      "error": null
+    },
+    {
+      "id": "guard-s1-qwen",
+      "area": "guard",
+      "state": {
+        "id": "guard-s1-qwen",
+        "references": {
+          "~deepseek/deepseek-v4-flash-latest": "push",
+          "xiaomi/mimo-v2.6-flash": "push"
+        },
+        "scorers": {
+          "typesafe/jev-1.13": "push",
+          "cloudflare/clef-omni": "push",
+          "nace-ai/drex-v1.5": "push",
+          "microsoft/microsoft-decision-1": "push"
+        }
+      },
+      "answers": {
+        "Disagree": {
+          "type": "noul",
+          "noul": 0.05
+        },
+        "ClefGap": {
+          "type": "noul",
+          "noul": 0.96
+        }
+      },
+      "cost": 1.8102e-05,
+      "cost_gap": false,
+      "input_tokens": 431,
+      "output_tokens": 39,
+      "error": null
+    },
+    {
+      "id": "guard-s2-qwen",
+      "area": "guard",
+      "state": {
+        "id": "guard-s2-qwen",
+        "references": {
+          "~deepseek/deepseek-v4-flash-latest": "stop",
+          "xiaomi/mimo-v2.6-flash": "stop"
+        },
+        "scorers": {
+          "typesafe/jev-1.13": "push",
+          "cloudflare/clef-omni": "stop",
+          "nace-ai/drex-v1.5": "stop",
+          "microsoft/microsoft-decision-1": "stop"
+        }
+      },
+      "answers": {
+        "Disagree": {
+          "type": "noul",
+          "noul": 0.87
+        },
+        "ClefGap": {
+          "type": "noul",
+          "noul": 0.96
+        }
+      },
+      "cost": 1.8102e-05,
+      "cost_gap": false,
+      "input_tokens": 431,
+      "output_tokens": 39,
+      "error": null
+    },
+    {
+      "id": "guard-s1-gemma",
+      "area": "guard",
+      "state": {
+        "id": "guard-s1-gemma",
+        "references": {
+          "~deepseek/deepseek-v4-flash-latest": "fact",
+          "xiaomi/mimo-v2.6-flash": "fact"
+        },
+        "scorers": {
+          "typesafe/jev-1.13": "fact",
+          "cloudflare/clef-omni": "done",
+          "nace-ai/drex-v1.5": "fact",
+          "microsoft/microsoft-decision-1": "done"
+        }
+      },
+      "answers": {
+        "Disagree": {
+          "type": "noul",
+          "noul": 0.92
+        },
+        "ClefGap": {
+          "type": "noul",
+          "noul": 0.95
+        }
+      },
+      "cost": 1.8102e-05,
+      "cost_gap": false,
+      "input_tokens": 431,
+      "output_tokens": 39,
+      "error": null
+    },
+    {
+      "id": "guard-s2-gemma",
+      "area": "guard",
+      "state": {
+        "id": "guard-s2-gemma",
+        "references": {
+          "~deepseek/deepseek-v4-flash-latest": "halt",
+          "xiaomi/mimo-v2.6-flash": null
+        },
+        "scorers": {
+          "typesafe/jev-1.13": "halt",
+          "cloudflare/clef-omni": "halt",
+          "nace-ai/drex-v1.5": "halt",
+          "microsoft/microsoft-decision-1": "halt"
+        }
+      },
+      "answers": {
+        "Disagree": {
+          "type": "noul",
+          "noul": 0.06
+        },
+        "ClefGap": {
+          "type": "noul",
+          "noul": 0.95
+        }
+      },
+      "cost": 1.8018e-05,
+      "cost_gap": false,
+      "input_tokens": 429,
+      "output_tokens": 39,
+      "error": null
+    }
+  ],
+  "calls": 12,
+  "cost": 0.00021714,
+  "ledger_sum": 0.0169856875
+}
