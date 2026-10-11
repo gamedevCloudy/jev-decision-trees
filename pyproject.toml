@@ -1,0 +1,14 @@
+[project]
+name = "jevdt"
+version = "0.1.0"
+description = "Compose decision models into trees and forests"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "matplotlib>=3.11.2",
+    "openai>=3.28.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -1,0 +1,6 @@
+name = "jevproof"
+version = "0.1.0"
+defaultTargets = ["JevProof"]
+
+[[lean_lib]]
+name = "JevProof"

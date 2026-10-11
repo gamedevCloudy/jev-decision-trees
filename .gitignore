@@ -1,0 +1,17 @@
+.env
+# never commit notes
+notes/
+.venv/
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Lean build tree
+**/.lake/
+
+# Typst build output
+paper/*.pdf
+
